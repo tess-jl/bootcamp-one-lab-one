@@ -3,6 +3,8 @@ import { isYes } from './is-yes.js';
 
 const myButton = document.getElementById('action-button');
 let correctAnswers = 0;
+const hiddenMessage = document.querySelector('.hidden');
+
 
 //button-click handler function, inputs string user name, answers 3 y/n Qs, returns string about score
 myButton.onclick = () => {
@@ -31,11 +33,15 @@ myButton.onclick = () => {
         }
         console.log(correctAnswers);
 
+        //dock the user name and the score for the results to be revealed
+        const nameForQuizResult = document.getElementById('name');
+        nameForQuizResult.textContent = userName;
+
         const quizResult = document.getElementById('quizResult');
         quizResult.textContent = correctAnswers;
 
-
-
+        //remove the hidden class to show the user the quiz result
+        hiddenMessage.classList.remove('hidden');
 
     } else {
         return ('not taking the quiz'); //ends the button-click handler function 

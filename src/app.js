@@ -1,6 +1,7 @@
 // import isYes function to use
 import { isYes } from './is-yes.js';
 
+//globally available variables
 const myButton = document.getElementById('action-button');
 let correctAnswers = 0;
 const hiddenMessage = document.querySelector('.hidden');

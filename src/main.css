@@ -31,6 +31,11 @@ h3 {
     color: rgb(46, 46, 92);
 }
 
+.lists {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
 #action-button {
     color: green;
     background-color: azure;

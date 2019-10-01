@@ -7,7 +7,7 @@ const hiddenMessage = document.querySelector('.hidden');
 
 
 //button-click handler function, inputs string user name, answers 3 y/n Qs, returns string about score
-myButton.onclick = () => {
+myButton.addEventListener = ('click', () => {
     alert('welcome to my quiz!');
 
     const userName = prompt('What is your name?'); //asks user's name
@@ -40,11 +40,11 @@ myButton.onclick = () => {
         const quizResult = document.getElementById('quizResult');
         quizResult.textContent = correctAnswers;
 
-        //remove the hidden class to show the user the quiz result
+        //remove the hidden class to show the user the quiz result after they finish the quiz
         hiddenMessage.classList.remove('hidden');
 
     } else {
-        return ('not taking the quiz'); //ends the button-click handler function 
+        return ('not taking the quiz'); //ends the button-click handler function since user is not taking the quiz
     }
-};
+});
 

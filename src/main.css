@@ -2,12 +2,32 @@ body {
     background-color: rgb(152, 209, 181);
 }
 
+article {
+    display: flex;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: rgb(13, 13, 46);
+    margin: 2px;
+}
+
+#places {
+    height: 200px;
+}
+
 h3 {
     color: rgb(19, 39, 19);
 }
 
 .eras {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
     color: rgb(46, 46, 92);
 }
 

@@ -3,11 +3,9 @@
 export function isYes(someString) {
     const userInput = someString.toLowerCase().trim();
 
-    if (userInput === 'yes') {
+    if (userInput === 'yes' || userInput === 'y' || userInput === 'yeah') {
         return true;
     } else {
         return false;
     }
 }
-
-//|| 'y'|| 'yeah'

@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { isYes } from '../app.js';
+import { isYes } from './src/is-yes.js';
 const test = QUnit.test;
 
 test('isYes should return true if the user says yes, y, or yeah no matter the caps or spacing', function (assert) {

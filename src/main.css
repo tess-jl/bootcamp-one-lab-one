@@ -4,7 +4,7 @@ body {
 
 h3 {
     color: rgb(19, 39, 19);
-};
+}
 
 .eras {
     font-family: 'Montserrat', sans-serif;
@@ -18,4 +18,5 @@ h3 {
 
 #hidden {
     opacity: 0;
-}
+} 
+

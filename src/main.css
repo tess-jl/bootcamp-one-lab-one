@@ -10,3 +10,12 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(46, 46, 92);
 }
+
+#action-button {
+    color: green;
+    background-color: azure;
+}
+
+#hidden {
+    opacity: 0;
+}

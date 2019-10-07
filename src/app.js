@@ -3,12 +3,12 @@ import { isYes } from './is-yes.js';
 
 //globally available variables
 const myButton = document.getElementById('action-button');
-let correctAnswers = 0;
 const hiddenMessage = document.querySelector('.hidden');
 
+let correctAnswers = 0;
 
 //button-click handler function, inputs string user name, answers 3 y/n Qs, returns string about score
-myButton.addEventListener = ('click', () => {
+myButton.addEventListener('click', () => {
     alert('welcome to my quiz!');
 
     const userName = prompt('What is your name?'); //asks user's name

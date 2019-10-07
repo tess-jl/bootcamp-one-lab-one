@@ -20,26 +20,23 @@ myButton.addEventListener('click', () => {
         if (isYes(question1Answer)) {
             correctAnswers += 1;
         }
-        console.log(correctAnswers);
 
         const question2Answer = prompt('Hi ' + userName + ', is my neighbor a blueberry farmer?'); // answer is no
         if (!isYes(question2Answer)) {
             correctAnswers += 1;
         }
-        console.log(correctAnswers);
 
         const question3Answer = prompt('Hi' + userName + ', since moving to Portland, have I worked as a babysitter?'); // answer is yes
         if (isYes(question3Answer)) {
             correctAnswers += 1;
         }
-        console.log(correctAnswers);
 
         //dock the user name and the score for the results to be revealed
         const nameForQuizResult = document.getElementById('name');
         nameForQuizResult.textContent = userName;
 
         const quizResult = document.getElementById('quizResult');
-        quizResult.textContent = correctAnswers;
+        quizResult.textContent = Math.floor((correctAnswers/3) * 100);
 
         //remove the hidden class to show the user the quiz result after they finish the quiz
         hiddenMessage.classList.remove('hidden');

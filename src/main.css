@@ -6,19 +6,28 @@ article {
     display: flex;
 }
 
+.story {
+    text-align: left;
+}
+
+img {
+    float: left;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(13, 13, 46);
     margin: 2px;
 }
 
 #places {
     height: 200px;
+    padding: 10px;
 }
 
 h3 {
@@ -37,11 +46,24 @@ h3 {
 }
 
 #action-button {
-    color: green;
+    color: darkslategreen;
     background-color: azure;
 }
 
 .hidden {
     opacity: 0;
 } 
+
+.good-result {
+    color: green;
+}
+
+.bad-result {
+    color: red;
+}
+
+button {
+    border-radius: 20px;
+}
+
 

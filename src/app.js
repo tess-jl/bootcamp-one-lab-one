@@ -13,7 +13,6 @@ myButton.addEventListener('click', () => {
 
     const userName = prompt('What is your name?'); //asks user's name
     const myConfirmation = prompt('do you want to take my quiz? (yes/no)');
-    console.log(myConfirmation);
 
     if (isYes(myConfirmation) === true) { // do want to take quiz
         const question1Answer = prompt('Hi ' + userName + ', is Acadia National Park in Downeast Maine?'); // answer is yes
@@ -35,8 +34,17 @@ myButton.addEventListener('click', () => {
         const nameForQuizResult = document.getElementById('name');
         nameForQuizResult.textContent = userName;
 
-        const quizResult = document.getElementById('quizResult');
-        quizResult.textContent = Math.floor((correctAnswers/3) * 100);
+        //stretch goal: add percentage score
+        const quizResult = document.getElementById('quiz-result');
+        quizResult.textContent = Math.floor((correctAnswers / 3) * 100);
+
+
+        //stretch goal: alter appearance of score depending on score
+        if (correctAnswers > 2) {
+            quizResult.classList.add('good-result');
+        } else {
+            quizResult.classList.add('bad-result');
+        }
 
         //remove the hidden class to show the user the quiz result after they finish the quiz
         hiddenMessage.classList.remove('hidden');
